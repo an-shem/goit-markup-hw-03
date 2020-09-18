@@ -10,12 +10,21 @@
 /* font-family: "Raleway", sans-serif;
 font-family: "Roboto", sans-serif; */
 
+/* Сбрасываю отступы всм элементам */
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* ======= COMMON ======= */
 body {
   font-family: var(--maim-font);
   font-style: normal;
   color: var(--title-color);
 }
+
 ul {
   list-style: none;
 }
@@ -25,6 +34,11 @@ a {
 .address {
   font-style: normal;
 }
+img {
+  display: block;
+}
+
+/* div.container  */
 
 /* ======= END COMMON ======= */
 
