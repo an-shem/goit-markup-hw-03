@@ -29,6 +29,7 @@ ul {
   list-style: none;
 }
 a {
+  display: block;
   text-decoration: none;
 }
 .address {
@@ -38,15 +39,29 @@ img {
   display: block;
 }
 
-/* div.container  */
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 94px 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid red;
+}
+/* Заголовки секций */
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
+/* Горизонтальное выравнивание контента
+ списка основной страницы */
+.main-list {
+  display: flex;
+  justify-content: space-between;
+}
 /* ======= END COMMON ======= */
 
 /* ======= LOGO ======= */
@@ -66,6 +81,7 @@ img {
   color: var(--accent-color);
 }
 .footer-logo {
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   color: var(--hero-title-color);
 }
@@ -79,13 +95,13 @@ img {
   align-items: center;
 }
 
-.header-nav,
-.header-address-list {
+.header-nav {
   display: flex;
   align-items: center;
 }
 
-.header-nav-list {
+.header-nav-list,
+.header-address-list {
   display: flex;
 }
 
@@ -124,11 +140,13 @@ img {
 
 /* ======= HERO ======= */
 .hero {
+  padding: 200px 0px;
   text-align: center;
   /* background - временно пока нет картинки на фон */
   background: #2f303a;
 }
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -138,6 +156,11 @@ img {
 }
 
 .button-services {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -150,13 +173,24 @@ img {
 /* ======= END HERO ======= */
 
 /* ======= FEATURES ======= */
+.features .container {
+  padding-bottom: 0;
+}
+
+.features-list-item {
+  width: 270px;
+  height: 100px;
+}
+
 .features-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .features-text {
   font-weight: 400;
   font-size: 14px;
@@ -167,24 +201,23 @@ img {
 /* ======= END FEATURES ======= */
 
 /* ======= SERVICES ======= */
-.services-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+
 /* ======= END SERVICES ======= */
 
 /* ======= COMMAND ======= */
-.command-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+.command-item {
+  width: 270px;
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.command-text {
+  padding: 30px 0px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .command-item-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -202,6 +235,12 @@ img {
 /* ======= END COMMAND ======= */
 
 /* ======= FOOTER ======= */
+.footer .container {
+  padding: 60px 0px;
+}
+.address-list:not(:last-child) {
+  margin-bottom: 10px;
+}
 .address-link {
   font-weight: 400;
   font-size: 14px;
@@ -216,6 +255,8 @@ img {
   background: #2f303a;
 }
 /* ======= END FOOTER ======= */
+
+/* Страница Портфолио */
 
 /* ======= PORTFOLIO ======= */
 .button-filter {
