@@ -259,6 +259,16 @@ img {
 /* Страница Портфолио */
 
 /* ======= PORTFOLIO ======= */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .button-filter {
   font-family: inherit;
   font-weight: 500;
