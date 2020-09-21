@@ -95,7 +95,6 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
-  background-color: var(--hero-title-color);
 }
 .header .container {
   display: flex;
@@ -210,6 +209,9 @@ img {
 /* ======= END SERVICES ======= */
 
 /* ======= COMMAND ======= */
+.command {
+  background: #f5f4fa;
+}
 .command-item {
   width: 270px;
   height: 368px;
@@ -259,21 +261,19 @@ img {
 }
 /* ======= END FOOTER ======= */
 
-/* Страница Портфолио */
-
 /* ======= PORTFOLIO ======= */
+
+/* ======= СПИСОК КНОПОК-ФИЛЬТРОВ ======= */
 .filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
+
 .button-filter {
   padding: 6px 22px;
   border-radius: 4px;
@@ -287,37 +287,46 @@ img {
   color: var(--title-color);
   background: #f5f4fa;
 }
+
 .button-filter:hover,
 .button-filter:focus {
   color: var(--hero-title-color);
   background: var(--accent-color);
 }
 
-/*  Карточка списка для фильтра */
-.portfolio-list-item {
-  /* margin: 15px; */
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
+/* ======= СЕТКА КАРТОЧЕК ======= */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .portfolio-list {
   margin: -15px;
 }
+
+.portfolio-list-item {
+  margin: 15px;
+}
+
+.portfolio-text {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  padding: 20px 24px;
+}
 .portfolio-item-name {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.porfolio-item-filter {
+.portfolio-item-filter {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.portfolio {
-  /* background-color: rgb(235, 16, 16); */
-}
+
 /* =======  END PORTFOLIO ======= */
