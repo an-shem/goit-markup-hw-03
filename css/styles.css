@@ -84,6 +84,7 @@ img {
   color: var(--accent-color);
 }
 .footer-logo {
+  display: inline-block;
   margin-bottom: 20px;
   font-family: var(--secondary-font);
   color: var(--hero-title-color);
@@ -243,6 +244,11 @@ img {
 .footer {
   padding: 60px 0px;
 }
+
+.address-link {
+  display: inline-block;
+}
+
 .address-list:not(:last-child) {
   margin-bottom: 10px;
 }
