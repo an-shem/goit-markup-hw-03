@@ -60,7 +60,7 @@ img {
 }
 
 /*  Верхний и нижний отступ секции */
-.indents {
+.section {
   padding: 94px 0;
 }
 /* Заголовки секций */
@@ -196,6 +196,10 @@ img {
 /* ======= END HERO ======= */
 
 /* ======= FEATURES ======= */
+.features.section {
+  padding-bottom: 0px;
+}
+
 .features-list-item {
   width: 270px;
   height: 100px;
