@@ -48,7 +48,9 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -253,7 +255,6 @@ img {
   background-color: #2e2f42;
 }
 .page-footer .logo {
-  display: block;
   margin-bottom: 16px;
 }
 .page-footer .logo-part,
