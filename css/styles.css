@@ -38,6 +38,20 @@ img {
 /* #endregion */
 
 /* #region Common */
+/* ДОПОЛНИТЕЛЬНЫЙ КЛАСС
+ ДЛЯ ТОГО ЧТОБЫ ПРАВИЛЬНО
+  СКРЫВАТЬ ЭЛЕМЕНТЫ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1158px;
   padding-left: 15px;
@@ -80,7 +94,7 @@ img {
 
 /* #region Logo*/
 .logo {
-  display: block;
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -105,9 +119,10 @@ img {
 }
 .header-nav {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 .page-header .logo {
+  margin-right: 76px;
   padding: 24px 0;
 }
 .menu {
@@ -147,7 +162,7 @@ img {
   background-color: #2e2f42;
 }
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px;
   font-weight: 700;
   font-size: 56px;
@@ -159,6 +174,7 @@ img {
 
 .hero-btn {
   display: block;
+  min-width: 169px;
   margin: 0 auto;
   padding: 16px 32px;
   border: none;
@@ -202,6 +218,9 @@ img {
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #ffffff;
+}
+.team .card-content-wrapper {
+  padding: 32px 0;
 }
 .team-card-name,
 .portfolio-card-title {
